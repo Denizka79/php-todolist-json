@@ -7,5 +7,11 @@
     },
     "Have breakfast": {
         "complete": false
+    },
+    "Go outside": {
+        "complete": false
+    },
+    "Take a bus": {
+        "complete": false
     }
 }
