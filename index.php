@@ -29,8 +29,9 @@
             if ($todo["complete"]) {
                 $complete = "checked";
             }
-            echo "<tr><td>" . $todoName . "</td><td><input type='checkbox' " . $complete . "></td>" . "<td><form action='delete.php' method='post'><input type='hidden' name='todo_name' value='" . $todoName ."'><button>Delete</button></form></td></tr>";
+            echo "<tr><td>" . $todoName . "</td><td><form action='changestatus.php' method='post'><input type='hidden' name='todo_name' value='" . $todoName . "'><input class='complete' type='checkbox' " . $complete . "></form></td><td><form action='delete.php' method='post'><input type='hidden' name='todo_name' value='" . $todoName ."'><button>Delete</button></form></td></tr>";
         } ?>
     </table>
+    <script src="index.js"></script>
 </body>
 </html>
